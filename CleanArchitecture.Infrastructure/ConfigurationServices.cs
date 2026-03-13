@@ -12,6 +12,7 @@ namespace CleanArchitecture.Infrastructure
             services.AddScoped<IAlmacenRepository, AlmacenRepository>();
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             services.AddScoped<IProductoRepository, ProductoRepository>();
+           
         }
     }
 }
