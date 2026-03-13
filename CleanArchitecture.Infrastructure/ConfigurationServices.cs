@@ -11,6 +11,7 @@ namespace CleanArchitecture.Infrastructure
             services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddScoped<IAlmacenRepository, AlmacenRepository>();
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+            services.AddScoped<IProductoRepository, ProductoRepository>();
         }
     }
 }
