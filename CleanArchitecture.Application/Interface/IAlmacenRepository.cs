@@ -7,5 +7,10 @@ namespace CleanArchitecture.Application.Interface
 {
     public interface IAlmacenRepository : IRepositoryBase<Almacen>
     {
+        Task<IEnumerable<Almacen>> GetAllAsync();
+        Task<Almacen> GetByIdAsync(int id);
+        Task AddAsync(Almacen almacen);
+        Task UpdateAsync(Almacen almacen);
+        Task DeleteAsync(int id);
     }
 }
